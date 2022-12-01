@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1F84F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .6);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid white;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #62BFD9;
+    border: 2px solid #62BFD9;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#nav-cadastro {
+    background-color: #145259;
+    padding: 8px;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+
+#nav-cadastro {
+    color: rgb(223, 223, 223);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#nav-cadastro > a:hover {
+    background-color: #065D1C;
+    color: #065D1C;
+}
+
+/* Error and Success */
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
